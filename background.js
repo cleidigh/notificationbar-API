@@ -30,7 +30,7 @@ messenger.notificationbar.onClosed.addListener((windowId, notificationId, closed
 async function addBoxes(window) {
   // adding a top box
   await messenger.notificationbar.create({
-    windowId: window.id,
+    windowId: window.windowId,
     label: "Sample notification top 1",
     placement: "top",
     priority: messenger.notificationbar.PRIORITY_WARNING_HIGH,
